@@ -91,7 +91,7 @@ public class Server implements Runnable {
                         if(messageSplit.length == 2) {
                             broadCastMessage(nickname+" renamed themselves to " + messageSplit[1]);
                             //server Log
-                            System.out.println(nickname=" renamed themselves to " + messageSplit[1]);
+                            System.out.println(nickname+" renamed themselves to " + messageSplit[1]);
                             nickname = messageSplit[1];
                             out.println("Successfully nickname changed to "+ nickname);
                         }else{
